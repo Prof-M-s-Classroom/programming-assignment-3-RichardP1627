@@ -24,17 +24,18 @@ public:
             std::cout << "Heap is full" << std::endl;
             return;
         }
+        int temp = size;
         heapArray[size] = vertex;
         keyArray[size] = key;
         position[vertex] = size;
         size++;
 
-        while (size > 0 && keyArray[size] < keyArray[(size - 1) / 2]) {
-            std::swap(heapArray[size], heapArray[(size - 1) / 2]);
-            std::swap(keyArray[size], keyArray[(size - 1) / 2]);
-            position[heapArray[size]] = size;
-            position[heapArray[(size - 1) / 2]] = (size - 1) / 2;
-            size = (size - 1) / 2;
+        while (temp > 0 && keyArray[temp] < keyArray[(temp - 1) / 2]) {
+            std::swap(heapArray[temp], heapArray[(temp - 1) / 2]);
+            std::swap(keyArray[temp], keyArray[(temp - 1) / 2]);
+            position[heapArray[temp]] = temp;
+            position[heapArray[(temp - 1) / 2]] = (temp - 1) / 2;
+            temp = (temp - 1) / 2;
         }
     }
 

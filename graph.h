@@ -14,7 +14,7 @@ public:
                     adjMatrix[i][j] = 0;
                 }
                 else {
-                    adjMatrix[i][j] = INT_MAX; //set to infinity?
+                    adjMatrix[i][j] = INT_MAX; //set to infinity
                 }
             }
         }
