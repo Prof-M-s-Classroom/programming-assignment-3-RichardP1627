@@ -2,10 +2,13 @@
 # Prim's Algorithm with Min Heap and Adjacency Matrix
 
 ## Author
-Your Name Here
+Richard Pak (130109717)
 
 ## Description
-Briefly describe what your program does and how the code is structured.
+This program utilizes an adjacency matrix and a minHeap data structure to use Prim's algorithm in finding the minimum spanning
+tree (MST) of a graph with multiple vertices and edge weights. Assuming that the vertices of the given graph in main.cpp are 
+connected, the program creates an adjecency matrix to hold the edge weights between all the vertices, and uses it to build the 
+minHeap, which is a priority queue that keeps track of all the vertices and its edge weights.
 
 ## Files
 - graph.h / graph.cpp
